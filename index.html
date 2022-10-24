@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Josef Molz &mdash; Webentwickler aus dem Bayrischen Wald</title>
+  </head>
+  <body>
+    <!-- WEBSITE CONTAINER -->
+    <div class="l-container">
+      <!-- HEADER -->
+      <header class="l-header">
+        <!-- LOGO -->
+        <div class="c-logo">
+          <img class="c-logo--small" src="img/user.jpg" alt="Logo" />
+          <div class="c-logo__text-container">
+            <span>Webdeveloper</span>
+            <span>Front-End</span>
+          </div>
+        </div>
+        <!-- SEARCH -->
+        <form action="" class="l-header__search c-search">
+          <input type="text" class="c-search__input" placeholder="Search..." />
+          <button class="c-search__button">
+            <svg class="c-search__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+        <!-- USER-NAV-ICONS -->
+        <nav class="l-header__user-nav c-user-nav">
+          <div class="c-user-nav__icon-box">
+            <svg class="c-user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="c-user-nav__notification">7</span>
+          </div>
+          <div class="c-user-nav__icon-box">
+            <svg class="c-user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="c-user-nav__notification">1</span>
+          </div>
+        </nav>
+      </header>
+      <!-- MAIN CONTENT -->
+      <div class="l-content">
+        <!-- SIDE NAVIGATION -->
+        <nav class="l-sidebar">
+          <ul class="c-side-nav">
+            <li class="c-side-nav__item c-side-nav__item--active">
+              <a href="#" class="c-side-nav__link">
+                <svg class="c-side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-user"></use>
+                </svg>
+                <span>About</span>
+              </a>
+            </li>
+            <li class="c-side-nav__item">
+              <a href="#" class="c-side-nav__link">
+                <svg class="c-side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-lab-flask"></use>
+                </svg>
+                <span>My Skills</span>
+              </a>
+            </li>
+            <li class="c-side-nav__item">
+              <a href="#" class="c-side-nav__link">
+                <svg class="c-side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-suitcase"></use>
+                </svg>
+                <span>Work</span>
+              </a>
+            </li>
+            <!-- <li class="c-side-nav__item">
+              <a href="#" class="c-side-nav__link">
+                <svg class="c-side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+                <span>Contact</span>
+              </a>
+            </li> -->
+          </ul>
+          <!-- LABEL -->
+          <div class="c-legal">&copy; 2022 by Josef Molz</div>
+        </nav>
+
+        <!-- SECTION HOTEL VIEW -->
+        <main class="l-hotel-view">
+          <!-- GALLERY -->
+          <div class="c-gallery">
+            <figure class="c-gallery__item">
+              <img
+                src="img/forest-1.jpg"
+                alt="forest 1"
+                class="c-gallery__photo"
+              />
+            </figure>
+            <figure class="c-gallery__item">
+              <img
+                src="img/forest-2.jpg"
+                alt="forest 2"
+                class="c-gallery__photo"
+              />
+            </figure>
+            <figure class="c-gallery__item">
+              <img
+                src="img/forest-3.jpg"
+                alt="forest 3"
+                class="c-gallery__photo"
+              />
+            </figure>
+          </div>
+          <!-- OVERVIEW -->
+          <div>
+            <div class="c-overview">
+              <h1 class="c-overview__heading">HTML</h1>
+              <div class="c-overview__stars">
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
+
+              <div class="c-overview__location">
+                <svg class="c-overview__icon-location">
+                  <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                </svg>
+                <button class="c-btn-inline">Bayern, Zwiesel</button>
+              </div>
+
+              <div class="c-overview__rating">
+                <div class="c-overview__rating-average">8.6</div>
+                <div class="c-overview__rating-count">1234</div>
+              </div>
+            </div>
+            <div class="c-overview">
+              <h1 class="c-overview__heading">CSS</h1>
+              <div class="c-overview__stars">
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
+
+              <div class="c-overview__location">
+                <svg class="c-overview__icon-location">
+                  <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                </svg>
+                <button class="c-btn-inline">Bayern, Zwiesel</button>
+              </div>
+
+              <div class="c-overview__rating">
+                <div class="c-overview__rating-average">8.6</div>
+                <div class="c-overview__rating-count">1234</div>
+              </div>
+            </div>
+            <div class="c-overview">
+              <h1 class="c-overview__heading">JavaScript</h1>
+              <div class="c-overview__stars">
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="c-overview__icon-star">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
+
+              <div class="c-overview__location">
+                <svg class="c-overview__icon-location">
+                  <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                </svg>
+                <button class="c-btn-inline">Bayern, Zwiesel</button>
+              </div>
+
+              <div class="c-overview__rating">
+                <div class="c-overview__rating-average">8.6</div>
+                <div class="c-overview__rating-count">1234</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DETAIL -->
+          <div class="l-details">
+            <div class="c-description">
+              <p class="c-description__paragraph">
+                Kermi GmbH Marketingreferent Anwendungssoftware /
+                Webapplikationen / Projektmanagement
+              </p>
+              <!-- <p class="c-description__paragraph">
+                Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                architecto voluptate delectus, inventore iure aliquid aliquam.
+              </p> -->
+
+              <!-- LISTE ITEM -->
+              <ul class="c-list">
+                <li class="c-list__item">
+                  <span class="c-list__arrow"></span>
+                  <p class="c-list__text">
+                    Koordination und Sicherstellung der Zusammenarbeit mit
+                    externen Dienstleistern sowie Agenturen
+                  </p>
+                </li>
+                <li class="c-list__item">
+                  <span class="c-list__arrow"></span>
+                  <p class="c-list__text">
+                    Entwicklung und Umsetzung von Strategien zur
+                    Prozessoptimierung
+                  </p>
+                </li>
+                <li class="c-list__item">
+                  <span class="c-list__arrow"></span>
+                  <p class="c-list__text">
+                    Konzeption, Realisierung und Weiterentwicklungen von HVAC-
+                    /Sanitär-Anwendungssoftware in Zusammenarbeit mit
+                    Softwarepartnern
+                  </p>
+                </li>
+                <li class="c-list__item">
+                  <span class="c-list__arrow"></span>
+                  <p class="c-list__text">
+                    Konzeption, Realisierung und Weiterentwicklung von Web-Apps
+                    (HTML, CSS, JavaScript)
+                  </p>
+                </li>
+                <li class="c-list__item">
+                  <span class="c-list__arrow"></span>
+                  <p class="c-list__text">
+                    Konzeption, Realisierung und Weiterentwicklung der 3D-/CAD-
+                    Plattformen für die 3D-Planung/BIM- Methode
+                  </p>
+                </li>
+                <li class="c-list__item">
+                  <span class="c-list__arrow"></span>
+                  <p class="c-list__text">
+                    Konzeption, Realisierung und Weiterentwicklung von
+                    Produktdaten
+                  </p>
+                </li>
+                <li class="c-list__item">
+                  <span class="c-list__arrow"></span>
+                  <p class="c-list__text">
+                    Konzeption und Erstellung von Produkt- und Image-Videos
+                  </p>
+                </li>
+                <li class="c-list__item">
+                  <span class="c-list__arrow"></span>
+                  <p class="c-list__text">
+                    Erstellung und Pflege technischer Dokumentationen
+                  </p>
+                </li>
+                <li class="c-list__item">
+                  <span class="c-list__arrow"></span>
+                  <p class="c-list__text">
+                    Interner und externe Support von IT- Module für das
+                    Marketing (Planungs- /Anwendungssoftware, TMS-
+                    Übersetzungstools, CAD-Systeme z.B. AutoCAD, Revit)
+                  </p>
+                </li>
+              </ul>
+
+              <div class="c-recommend">
+                <p class="c-recommend__count">Lorem ipsum dolor sit amet.</p>
+                <div class="c-recommend__friends">
+                  <img
+                    src="img/user.jpg"
+                    alt="User-3"
+                    class="c-recommend__photo"
+                  />
+                  <img
+                    src="img/user.jpg"
+                    alt="User-4"
+                    class="c-recommend__photo"
+                  />
+                  <img
+                    src="img/user.jpg"
+                    alt="User-5"
+                    class="c-recommend__photo"
+                  />
+                  <img
+                    src="img/user.jpg"
+                    alt="User-6"
+                    class="c-recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="c-user-reviews">
+              <figure class="c-review">
+                <blockquote class="c-review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                  sequi, cum odit provident voluptatum corrupti?
+                </blockquote>
+                <figcaption class="c-review__user">
+                  <img
+                    src="img/user.jpg"
+                    alt="user-1"
+                    class="c-review__photo"
+                  />
+                  <div class="c-review__user-box">
+                    <p class="c-review__user-name">Jock</p>
+                    <p class="c-review__user-date">1111</p>
+                  </div>
+                  <div class="c-review__rating">7.8</div>
+                </figcaption>
+              </figure>
+              <figure class="c-review">
+                <blockquote class="c-review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                  sequi, cum odit provident voluptatum corrupti?
+                </blockquote>
+                <figcaption class="c-review__user">
+                  <img
+                    src="img/user.jpg"
+                    alt="user-1"
+                    class="c-review__photo"
+                  />
+                  <div class="c-review__user-box">
+                    <p class="c-review__user-name">Jock</p>
+                    <p class="c-review__user-date">1111</p>
+                  </div>
+                  <div class="c-review__rating">7.8</div>
+                </figcaption>
+              </figure>
+              <button class="c-btn-inline">Show all <span>&rarr;</span></button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
