@@ -1,4 +1,8 @@
 .c-search {
+  @media only screen and (max-width: $bp-smallest) {
+    background-color: var(--color-grey-light-2);
+  }
+
   &__input {
     padding: 0.7rem 2rem;
     font-family: inherit;
@@ -20,6 +24,10 @@
       outline: none;
       width: 100%;
       background-color: var(--color-grey-light-3);
+
+      @media only screen and (max-width: $bp-smallest) {
+        background-color: var(--color-grey-light-2);
+      }
     }
   }
 

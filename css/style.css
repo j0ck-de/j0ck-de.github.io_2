@@ -31,6 +31,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   display: flex;
@@ -71,6 +74,10 @@ body {
     margin-left: 2rem;
     border-radius: 100%; }
 
+@media only screen and (max-width: 31.25em) {
+  .c-search {
+    background-color: var(--color-grey-light-2); } }
+
 .c-search__input {
   padding: 0.7rem 2rem;
   font-family: inherit;
@@ -89,6 +96,9 @@ body {
     outline: none;
     width: 100%;
     background-color: var(--color-grey-light-3); }
+    @media only screen and (max-width: 31.25em) {
+      .c-search__input:focus {
+        background-color: var(--color-grey-light-2); } }
 
 .c-search__input:focus + .c-search__button {
   background-color: var(--color-grey-light-3); }
@@ -147,10 +157,20 @@ body {
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .c-side-nav {
+      display: flex;
+      margin: 0; } }
   .c-side-nav__item {
     position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .c-side-nav__item {
+        flex: 1; } }
     .c-side-nav__item:not(:last-child) {
       margin-bottom: 0.5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .c-side-nav__item:not(:last-child) {
+          margin-bottom: 0; } }
     .c-side-nav__item::before {
       content: "";
       position: absolute;
@@ -175,17 +195,34 @@ body {
     align-items: center;
     position: relative;
     z-index: 1; }
+    @media only screen and (max-width: 56.25em) {
+      .c-side-nav__link:link, .c-side-nav__link:visited {
+        justify-content: center;
+        padding: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .c-side-nav__link:link, .c-side-nav__link:visited {
+        flex-direction: column;
+        padding: 1.5rem 0.5rem; } }
   .c-side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; }
+    @media only screen and (max-width: 37.5em) {
+      .c-side-nav__icon {
+        margin-right: 0;
+        margin-bottom: 0.7rem;
+        width: 1.5rem;
+        height: 1.5rem; } }
 
 .c-legal {
   font-size: 1.2rem;
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .c-legal {
+      display: none; } }
 
 .c-gallery {
   display: flex; }
@@ -207,6 +244,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .c-overview__heading {
+        font-size: 1.8rem;
+        padding: 1.25rem 2rem; } }
   .c-overview__stars {
     margin-right: auto;
     display: flex; }
@@ -230,13 +271,22 @@ body {
     color: #fff;
     align-self: stretch;
     padding: 0 2.25rem; }
+    @media only screen and (max-width: 37.5em) {
+      .c-overview__rating {
+        padding: 0rem 1.5rem; } }
   .c-overview__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px; }
+    @media only screen and (max-width: 37.5em) {
+      .c-overview__rating-average {
+        font-size: 1.8rem; } }
   .c-overview__rating-count {
     font-size: 0.8rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .c-overview__rating-count {
+        font-size: 0.5rem; } }
 
 .c-btn-inline {
   border: none;
@@ -248,8 +298,13 @@ body {
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s; }
+  .c-btn-inline span {
+    margin-left: 3px;
+    transition: margin-left 0.2s; }
   .c-btn-inline:hover {
     color: var(--color-grey-dark-1); }
+    .c-btn-inline:hover span {
+      margin-left: 8px; }
   .c-btn-inline:focus {
     outline: none;
     animation: pulsate 1s infinite; }
@@ -271,7 +326,10 @@ body {
     flex: 0; }
 
 .c-user-reviews {
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .c-description {
   flex: 0 0 60%;
@@ -280,6 +338,15 @@ body {
   box-shadow: var(--shadow-light);
   padding: 3rem;
   font-size: 1.4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .c-description {
+      justify-content: center;
+      padding: 2rem;
+      margin-right: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .c-description {
+      margin-right: 0;
+      margin-bottom: 3rem; } }
   .c-description__paragraph {
     font-weight: 900; }
     .c-description__paragraph:not(:last-of-type) {
@@ -295,7 +362,7 @@ body {
   margin: 3rem 0; }
   .c-list__item {
     display: flex;
-    flex: 0 0 50%;
+    flex: 0 0 100%;
     margin-bottom: 0.7rem; }
   .c-list__arrow:before {
     content: "";
@@ -316,6 +383,8 @@ body {
   color: var(--color-grey-dark-3); }
   .c-recommend__count {
     margin-right: auto; }
+  .c-recommend__friends {
+    display: flex; }
   .c-recommend__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -323,7 +392,7 @@ body {
     border-radius: 100%;
     border: 3px solid #fff; }
     .c-recommend__photo:not(:last-child) {
-      margin-right: -1.5rem; }
+      margin-right: -2rem; }
 
 .c-review {
   background-color: #fff;
@@ -332,6 +401,10 @@ body {
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .c-review {
+      padding: 2rem;
+      margin-bottom: 3rem; } }
   .c-review__text {
     position: relative;
     margin-bottom: 2rem;
@@ -369,17 +442,68 @@ body {
     line-height: 1;
     z-index: 1; }
 
+.c-cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .c-cta {
+      padding: 2.5rem 0; } }
+  .c-cta__book-now {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
+
+.c-btn {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 300;
+  border-radius: 100px;
+  border: none;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer; }
+  .c-btn > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s; }
+  .c-btn__visible {
+    padding: 2rem 7.5rem; }
+  .c-btn__invisible {
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: -100%; }
+  .c-btn:hover {
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
+  .c-btn:hover .c-btn__visible {
+    transform: translateY(100%); }
+  .c-btn:hover .c-btn__invisible {
+    top: 0; }
+  .c-btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
+
 .l-container {
   display: flex;
   flex-direction: column;
   background-color: var(--color-grey-light-2);
   box-shadow: var(--shadow-dark);
   width: 100%;
-  margin: 5rem; }
+  margin: 0 10rem; }
+  @media only screen and (max-width: 75em) {
+    .l-container {
+      margin: 0;
+      max-width: 100%; } }
 
 .l-content {
   display: flex;
   height: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .l-content {
+      flex-direction: column; } }
 
 .l-header {
   display: flex;
@@ -390,11 +514,20 @@ body {
   border-bottom: var(--line);
   font-size: 1.4rem;
   height: 7rem; }
+  @media only screen and (max-width: 31.25em) {
+    .l-header {
+      flex-wrap: wrap;
+      height: 11rem;
+      align-content: space-around; } }
   .l-header__search {
     flex: 0 0 40%;
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media only screen and (max-width: 31.25em) {
+      .l-header__search {
+        order: 1;
+        flex: 0 0 100%; } }
   .l-header__user-nav {
     display: flex;
     align-items: center;
@@ -406,6 +539,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  @media only screen and (max-width: 56.25em) {
+    .l-sidebar {
+      flex: 0; } }
 
 .l-hotel-view {
   background-color: #fff;
@@ -418,3 +554,9 @@ body {
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line); }
+  @media only screen and (max-width: 56.25em) {
+    .l-details {
+      padding: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .l-details {
+      flex-direction: column; } }
