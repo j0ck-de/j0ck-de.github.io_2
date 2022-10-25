@@ -6,13 +6,13 @@
   padding: 3rem;
   font-size: 1.4rem;
 
-  @media only screen and (max-width: $bp-medium) {
+  @include respond(bp-medium) {
     justify-content: center;
     padding: 2rem;
     margin-right: 3rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @include respond(bp-small) {
     margin-right: 0;
     margin-bottom: 3rem;
   }

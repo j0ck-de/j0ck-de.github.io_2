@@ -5,11 +5,11 @@
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
 
-  @media only screen and (max-width: $bp-medium) {
+  @include respond(bp-medium) {
     padding: 3rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @include respond(bp-small) {
     flex-direction: column;
   }
 }
